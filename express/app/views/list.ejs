@@ -1,0 +1,10 @@
+<% layout('layout') -%>
+
+<h2><%= title %></h2>
+<%- partial('item', todos) %>
+
+<br><br>
+<form action="/todo" method="post">
+Add Task: <input type="text" name="description">
+<button class="Button" type="submit">Add</button>
+</form>
